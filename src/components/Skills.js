@@ -46,7 +46,7 @@ function Skills(){
     ]
 
     return(
-        <main className="flex w-full justify-evenly px-12
+        <main className="flex w-full justify-evenly px-12 animate__animated animate__fadeInUp 
         max-sm:flex-col max-sm:gap-8">
             {/* console.log("Seesh") */}
             {skillDetails.map((item,index)=>(
