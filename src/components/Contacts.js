@@ -1,9 +1,10 @@
+import resume from "../assets/resume.pdf"
+
 function Contact(props){
     const details=props.item
     return (
-        <a href={details.link} target="_blank" className="flex flex-col justify-between items-center col-span-2 px-2 pb-4 rounded-lg shadow-md hover:bg-neutral-900 transition hover:shadow-none duration-200 shadow-neutral-950 overflow-hidden scale-110
-            max-sm:col-span-4 max-sm:shadow-neutral-950 max-sm:shadow-lg max-sm:h-3/5 aspect-square
-        ">
+        <>
+        <a download={details.name=="Resume"} href={details.link} target="_blank" className="flex flex-col justify-between items-center col-span-2 px-2 pb-4 rounded-lg shadow-md hover:bg-neutral-900 transition hover:shadow-none duration-200 shadow-neutral-950 overflow-hidden scale-110 max-sm:col-span-4 max-sm:shadow-neutral-950 max-sm:shadow-lg max-sm:h-3/5 aspect-square">
             <div className="scale-75">
                 {details.name=="LinkedIn"?
                 <img className="scale-60 -mt-3" loading="lazy" src={details.img} alt={details.name}/>
@@ -12,6 +13,7 @@ function Contact(props){
             </div>
             <p className="text-xl text-[#ddd]">{details.name}</p>
         </a>
+        </>
     )
 }
 
@@ -36,7 +38,7 @@ function Contacts(){
         },
         {
             name:"Resume",
-            link:"",
+            link:resume,
             img:"https://cdn-icons-png.flaticon.com/128/2986/2986483.png"
         },
     ]
