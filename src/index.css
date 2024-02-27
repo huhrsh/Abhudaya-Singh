@@ -1,13 +1,22 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: "afacad";
+  src: url('./assets/Afacad-VariableFont_wght.ttf');
+  font-display: block;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer{
+    *{
+      @apply box-border m-0 p-0 font-[afacad]  antialiased
+    }
+    html{
+      @apply flex flex-col align-middle justify-center
+      /* bg-neutral-800 */
+       bg-gradient-to-l from-neutral-800 to-stone-900 
+    }
+    html::-webkit-scrollbar{
+      display: none;
+    }
 }
