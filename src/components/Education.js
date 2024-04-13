@@ -35,7 +35,7 @@ function Education(){
             institute:"Vellore Institute of Technology, Vellore",
             degree:"B.Tech in Electrical and Electronics Engineering",
             year:"2021-2025",
-            score:6.4
+            score:7.2
         },
         {
             institute:"Amity International School, Mayur Vihar",
