@@ -1,6 +1,7 @@
 import belCert from "../assets/BEL certificate.png" 
 import ngoCert from "../assets/NGO certificate.png"
 import busCert from "../assets/bus certificate.png"
+import nptCert from "../assets/NPTEL24BT23S86980067330376148_page-0001.jpg"
 
 function Certificate(props){
     const details=props.item
@@ -41,9 +42,16 @@ function Certifications(){
         link:"",
      },   
      {
+        title:"Certificate of Completion",
+        issuer:"NPTEL",
+        durtion:"",
+        img:nptCert,
+        link:"https://internalapp.nptel.ac.in/NOC/NOC24/SEM1/Ecertificates/102/noc24-bt23/Course/NPTEL24BT23S86980067330376148.pdf",
+     },   
+     {
          title:"Certificate of Completion",
          issuer:"SkillUP by Simplilearn",
-         durtion:"duration if available",
+         durtion:"",
          img:busCert,
          link:"https://www.simplilearn.com/skillup-certificate-landing?token=eyJjb3Vyc2VfaWQiOiI2NjQiLCJjZXJ0aWZpY2F0ZV91cmwiOiJodHRwczpcL1wvY2VydGlmaWNhdGVzLnNpbXBsaWNkbi5uZXRcL3NoYXJlXC90aHVtYl80MTU5MzkwXzE2NzYyNzY0MDMucG5nIiwidXNlcm5hbWUiOiJBYmh1ZGF5YSBTaW5naCJ9&utm_source=shared-certificate&utm_medium=app_lms&utm_campaign=shared-certificate-promotion&referrer=https%3A%2F%2Fcertificates.simplicdn.net%2Fshare%2Fthumb_4159390_1676276403.png&_branch_match_id=1149359643915441876&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXL87MLcjJ1EssKNDLyczL1i9NColwDvR0y6tIAgC3LteHIwAAAA%3D%3D",
         },   
